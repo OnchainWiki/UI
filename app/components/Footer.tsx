@@ -1,4 +1,4 @@
-import { Github, Twitter, MessageCircle, Mail, Zap } from "lucide-react"
+import { Github, Twitter, MessageCircle, Mail, Zap, X } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -16,22 +16,22 @@ export default function Footer() {
               <span className="text-xl font-bold gradient-text">OnchainWiki</span>
             </div>
             <p className="text-gray-600 dark:text-gray-400 mb-6 max-w-md">
-              Your comprehensive guide to blockchain technology, DeFi, NFTs, and the decentralized web. Learn, explore,
-              and master Web3 with our community-driven platform.
+              Your comprehensive guide to blockchain technology and the decentralized web. <br/>Learn, explore 
+              and master Web3 with OnchianWiki.
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://x.com/onchainwiki_"
                 className="glass w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/20 dark:hover:bg-white/10 transition-colors"
               >
-                <Twitter className="w-5 h-5" />
+                <X className="w-5 h-5" />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="glass w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/20 dark:hover:bg-white/10 transition-colors"
               >
                 <Github className="w-5 h-5" />
-              </a>
+              </a> */}
               <a
                 href="https://t.me/onchainwiki_bot"
                 target="_blank"
@@ -41,7 +41,8 @@ export default function Footer() {
                 <MessageCircle className="w-5 h-5" />
               </a>
               <a
-                href="mailto:hello@onchainwiki.com"
+                href="mailto:etokoffice@gmail.com"
+                target="_blank"
                 className="glass w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/20 dark:hover:bg-white/10 transition-colors"
               >
                 <Mail className="w-5 h-5" />
@@ -55,7 +56,8 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="https://t.me/onchainwiki_bot"
+                  target="_blank"
                   className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >
                   Getting Started
@@ -110,7 +112,8 @@ export default function Footer() {
               </li> */}
               <li>
                 <a
-                  href="#"
+                  href="https://t.me/+1PfrQe7g5u1hZjY0"
+                  target="_blank"
                   className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >
                   Community
@@ -118,7 +121,8 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://t.me/+1PfrQe7g5u1hZjY0"
+                  target="_blank"
                   className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >
                   Support
@@ -146,12 +150,12 @@ export default function Footer() {
             >
               Terms of Service
             </a>
-            <a
+            {/* <a
               href="#"
               className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               Cookie Policy
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

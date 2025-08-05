@@ -47,7 +47,10 @@ export const metadata: Metadata = {
   description:
     "Discover, learn, and explore the world of blockchain and Web3 with OnchainWiki. Your comprehensive guide to decentralized technologies.",
   keywords: "blockchain, web3, cryptocurrency, DeFi, NFT, smart contracts, ethereum",
-  authors: [{ name: "OnchainWiki Team" }],
+  authors: [{ name: "etette.onchain" }],
+  icons: {
+    icon: "dp.jpg",
+  },
   openGraph: {
     title: "OnchainWiki - Your Gateway to Web3 Knowledge",
     description: "Discover, learn, and explore the world of blockchain and Web3 with OnchainWiki.",

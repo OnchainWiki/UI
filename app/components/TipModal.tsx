@@ -13,11 +13,9 @@ export default function TipModal({ isOpen, onClose }: TipModalProps) {
   const [copied, setCopied] = useState(false)
   const [shareCopied, setShareCopied] = useState(false)
   
-  const walletAddress = "0x1234567890123456789012345678901234567890" // Replace with actual wallet address
-  
-  // Replace with your actual Twitter handle and bot/site URL
+  const walletAddress = "0xBAAA8DC7482b83A54ecb6E5A1630353aC5c1291f" 
   const twitterUrl = "https://twitter.com/Onchainwiki_" 
-  const shareUrl = "https://t.me/onchainwiki_bot" 
+  const shareUrl = "https://t.me/onchainwiki_bot"
   const shareText = "Check out OnchainWiki - Your Gateway to Web3 Knowledge! 🚀"
 
   const copyToClipboard = async () => {
@@ -86,7 +84,7 @@ export default function TipModal({ isOpen, onClose }: TipModalProps) {
 
         {/* Wallet Address */}
         <div className="mb-6">
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Ethereum - Lisk - Base </label>
+          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Ethereum Address</label>
           <div className="flex items-center space-x-2">
             <div className="flex-1 glass rounded-xl p-3 font-mono text-sm break-all">{walletAddress}</div>
             <Button
@@ -147,7 +145,7 @@ export default function TipModal({ isOpen, onClose }: TipModalProps) {
         {/* Footer */}
         <div className="text-center mt-6">
           <p className="text-xs text-gray-500 dark:text-gray-500">
-            Your support helps us create better content for the Web3 community ❤️
+            Your support helps us improve OnchainWiki for the Web3 community ❤️
           </p>
         </div>
       </div>

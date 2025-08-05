@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Moon, Sun, Menu, X, Zap } from "lucide-react"
-import { useTheme } from "./ThemeProvider" // Import directly from ThemeProvider
+import { useTheme } from "./ThemeProvider" 
 import { Button } from "./ui/button"
 
 export default function Header() {
@@ -34,14 +34,15 @@ export default function Header() {
             >
               Features
             </a>
-            <a
+            {/* <a
               href="#about"
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               About
-            </a>
+            </a> */}
             <a
-              href="#community"
+              href="https://t.me/+1PfrQe7g5u1hZjY0"
+              target="_blank"
               className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               Community
@@ -81,14 +82,15 @@ export default function Header() {
               >
                 Features
               </a>
-              <a
+              {/* <a
                 href="#about"
                 className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 About
-              </a>
+              </a> */}
               <a
-                href="#community"
+                href="https://t.me/+1PfrQe7g5u1hZjY0"
+                target="_blank"
                 className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 Community
