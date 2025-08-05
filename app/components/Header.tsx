@@ -16,7 +16,12 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg">
-              <Zap className="w-6 h-6 text-white" />
+              {/* <Zap className="w-6 h-6 text-white" /> */}
+               <img 
+                src="dp.jpg"
+                alt="OnchainWiki Logo"
+                className="w-full h-full object-cover rounded-lg"
+              />
             </div>
             <span className="text-xl font-bold gradient-text">OnchainWiki</span>
           </div>

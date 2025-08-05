@@ -32,12 +32,12 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           <span className="gradient-text">OnchainWiki</span>
           <br />
-          <span className="text-gray-800 dark:text-gray-200">Explore Web3</span>
+          <span className="text-gray-800 dark:text-gray-200">Your Web3 Guide</span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
-         An educational Web3 Telegram AI Assistant and Crypto Asset Manager. Explore web3 safely with me !!
+         An educational Web3 Telegram AI Assistant and Crypto Asset Manager. <br/>Explore blockchain safely with me !!
         </p>
 
         {/* CTA Buttons */}
