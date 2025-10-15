@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   keywords: "blockchain, web3, cryptocurrency, DeFi, NFT, smart contracts, ethereum",
   authors: [{ name: "etette.onchain" }],
   icons: {
-    icon: "dp.jpg",
+    icon: "wikiHeader.jpg",
   },
   openGraph: {
     title: "OnchainWiki - Your Gateway to Web3 Knowledge",

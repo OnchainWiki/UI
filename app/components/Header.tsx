@@ -19,7 +19,7 @@ export default function Header() {
             <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-r from-blue-500 to-purple-600 shadow-lg">
               {/* <Zap className="w-6 h-6 text-white" /> */}
                <img 
-                src="dp.jpg"
+                src="onWiki.jpg"
                 alt="OnchainWiki Logo"
                 className="w-full h-full object-cover rounded-lg"
               />

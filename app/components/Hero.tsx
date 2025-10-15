@@ -9,23 +9,35 @@ export default function Hero() {
   const [isTipModalOpen, setIsTipModalOpen] = useState(false)
 
   return (
-    <section className="relative pt-32 pb-20 px-4 overflow-hidden">
+    <section className="relative pt-32 pb-20 px-4 overflow-hidden isolate">
+
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500/20 rounded-full blur-xl animate-float" />
+      <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500/20 rounded-full blur-xl animate-float -z-10" />
       <div
-        className="absolute top-40 right-20 w-32 h-32 bg-purple-500/20 rounded-full blur-xl animate-float"
+        className="absolute top-40 right-20 w-32 h-32 bg-purple-500/20 rounded-full blur-xl animate-float -z-10"
         style={{ animationDelay: "2s" }}
       />
       <div
-        className="absolute bottom-20 left-1/4 w-24 h-24 bg-indigo-500/20 rounded-full blur-xl animate-float"
+        className="absolute bottom-20 left-1/4 w-24 h-24 bg-indigo-500/20 rounded-full blur-xl animate-float -z-10"
         style={{ animationDelay: "4s" }}
       />
 
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-7xl mx-auto text-center relative z-10">
         {/* Badge */}
         <div className="inline-flex items-center space-x-2 glass-card rounded-full px-6 py-2 mb-8 animate-pulse-slow">
           <Sparkles className="w-4 h-4 text-blue-500" />
           <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Your Web3 Educator and Digital asset manager</span>
+        </div>
+        {/* Brand Image */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="relative w-full h-64 md:h-80 overflow-hidden rounded-3xl shadow-2xl">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-3xl z-10" />
+            <img
+              src="/wikiHeader.jpg"
+              alt="OnchainWiki Brand"
+              className="w-full h-full object-cover object-center transform hover:scale-110 transition-all duration-500"
+            />
+          </div>
         </div>
 
         {/* Main Heading */}
@@ -37,7 +49,7 @@ export default function Hero() {
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
-         An educational Web3 Telegram AI Assistant and Crypto Asset Manager. <br/>Explore blockchain safely with me !!
+          An educational Web3 Telegram AI Assistant and Crypto Asset Manager. <br />Explore blockchain safely with me !!
         </p>
 
         {/* CTA Buttons */}
