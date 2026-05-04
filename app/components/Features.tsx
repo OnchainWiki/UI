@@ -113,14 +113,14 @@ const features = [
   {
     icon: Users,
     title: "Community Driven",
-    description: "Built for the community, by the community. Learn from fine-tuned AI and collective knowledge.",
+    description: "Built for the community, learn from collective knowledge.",
     color: "from-purple-500 to-pink-500",
     glow: "group-hover:shadow-purple-500/20",
   },
   {
     icon: Zap,
     title: "Real-time Updates",
-    description: "Stay current with the latest in Web3, DeFi, DeSci, DAOs, and live market prices.",
+    description: "Stay current with the latest in Web3, DeFi, DeSci, DAOs and live market prices.",
     color: "from-yellow-500 to-orange-500",
     glow: "group-hover:shadow-yellow-500/20",
   },
@@ -134,14 +134,14 @@ const features = [
   {
     icon: TrendingUp,
     title: "Remittance",
-    description: "Securely manage, transfer, and track your crypto assets with our integrated wallet features.",
+    description: "Securely manage, transfer and track your crypto assets with our seamless wallet features.",
     color: "from-indigo-500 to-blue-500",
     glow: "group-hover:shadow-indigo-500/20",
   },
   {
     icon: Globe,
     title: "Multi-chain Coverage",
-    description: "Break borders. Explore, bridge, and manage crypto assets across multiple blockchain networks seamlessly.",
+    description: "Break borders. Explore, bridge and manage crypto assets across multiple blockchain networks seamlessly.",
     color: "from-teal-500 to-cyan-500",
     glow: "group-hover:shadow-teal-500/20",
   },
@@ -179,7 +179,7 @@ export default function Features() {
             </span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Everything you need to understand, navigate, and build in the world of decentralized technologies.
+            Everything you need to understand, navigate and build in the world of decentralized technologies.
           </p>
         </div>
 
@@ -198,11 +198,6 @@ export default function Features() {
                 
                 {/* Top Section: Icon & Decorative elements */}
                 <div className="flex items-start justify-between mb-8">
-                  {/* <div className={`flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br ${feature.color} p-0.5 shadow-lg transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
-                    <div className="flex items-center justify-center w-full h-full bg-white dark:bg-neutral-900 rounded-[14px] backdrop-blur-sm">
-                      <feature.icon className={`w-6 h-6 bg-clip-text text-transparent bg-gradient-to-br ${feature.color} text-gray-800 dark:text-white drop-shadow-sm`} />
-                    </div>
-                  </div> */}
                   <div className={`flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br ${feature.color} p-0.5 shadow-lg group-hover:rotate-3 transition-all duration-500`}>
                     <div className="flex items-center justify-center w-full h-full bg-white/90 dark:bg-neutral-900 rounded-[14px] backdrop-blur-sm">
                       <feature.icon className={`w-6 h-6 text-gray-900 dark:text-white`} />
