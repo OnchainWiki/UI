@@ -1,103 +1,3 @@
-// "use client"
-
-// import { BookOpen, Users, Zap, Shield, TrendingUp, Globe } from "lucide-react"
-
-// const features = [
-//   {
-//     icon: BookOpen,
-//     title: "Web3 Mentor",
-//     description:
-//       "Real time mentor with explanations covering all aspects of blockchain technology and Web3 ecosystems.",
-//     color: "from-blue-500 to-cyan-500",
-//   },
-//   {
-//     icon: Users,
-//     title: "Community Driven",
-//     description: "Built for the community with inputs from the community. Gain knowledge and learn from fine-tuned AI.",
-//     color: "from-purple-500 to-pink-500",
-//   },
-//   {
-//     icon: Zap,
-//     title: "Real-time Updates",
-//     description: "Stay current with the latest developments in Web3, DeFi, DeSci, DAOs and prices of cryptocurrencies.",
-//     color: "from-yellow-500 to-orange-500",
-//   },
-//   {
-//     icon: Shield,
-//     title: "Security First",
-//     description:
-//       "Learn about security best practices in Web3 and how to protect your digital assets.",
-//     color: "from-green-500 to-emerald-500",
-//   },
-//   {
-//     icon: TrendingUp,
-//     title: "Remitance",
-//     description: "Securely manage your crypto assets with our integrated wallet features.",
-//     color: "from-indigo-500 to-blue-500",
-//   },
-//   {
-//     icon: Globe,
-//     title: "Multi-chain Coverage",
-//     description:
-//       "Explore multiple blockchain networks for Crypto Assets management.",
-//     color: "from-teal-500 to-cyan-500",
-//   },
-// ]
-
-// export default function Features() {
-//   return (
-//     <section id="features" className="py-20 px-4">
-//       <div className="max-w-7xl mx-auto">
-//         {/* Section Header */}
-//         <div className="text-center mb-16">
-//           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-//             <span className="gradient-text">Onchain Features</span>
-//           </h2>
-//           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-//             Everything you need to understand and navigate the world of blockchain and decentralized technologies.
-//           </p>
-//         </div>
-
-//         {/* Features Grid */}
-//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-//           {features.map((feature, index) => (
-//             <div key={index} className="glass-card rounded-2xl p-8 hover:scale-105 transition-all duration-300 group">
-//               {/* Icon */}
-//               <div
-//                 className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${feature.color} p-4 mb-6 group-hover:scale-110 transition-transform duration-300`}
-//               >
-//                 <feature.icon className="w-8 h-8 text-white" />
-//               </div>
-
-//               {/* Content */}
-//               <h3 className="text-xl font-bold mb-4 text-gray-800 dark:text-gray-200">{feature.title}</h3>
-//               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{feature.description}</p>
-//             </div>
-//           ))}
-//         </div>
-
-//         {/* Bottom CTA */}
-//         <div className="text-center mt-16">
-//           <div className="glass-card rounded-2xl p-8 max-w-4xl mx-auto">
-//             <h3 className="text-2xl md:text-3xl font-bold mb-4 gradient-text">Ready to Start Your Web3 Journey?</h3>
-//             <p className="text-gray-600 dark:text-gray-400 mb-6 text-lg">
-//               Join thousands of learners exploring the decentralized future today. <br/> Gain a personal mentor and
-//               navigate Web3 ecosystem safely.
-//             </p>
-//             <button
-//               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-2xl font-semibold shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-//               onClick={() => window.open("https://t.me/onchainwiki_bot", "_blank")}
-//             >
-//               Get Started Now
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   )
-// }
-
-
 "use client"
 
 import { BookOpen, Users, Zap, Shield, TrendingUp, Globe, ArrowRight, Sparkles } from "lucide-react"
@@ -163,11 +63,9 @@ const getBentoLayout = (index: number) => {
 export default function Features() {
   return (
     <section id="features" className="py-24 px-4 relative overflow-hidden">
-      {/* Background Ambient Blur (Optional: adds a massive dark/web3 feel) */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/10 dark:bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Section Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/50 dark:bg-white/5 border border-gray-200 dark:border-white/10 backdrop-blur-md text-sm font-medium text-gray-800 dark:text-gray-200 mb-6">
             <Sparkles className="w-4 h-4 text-blue-500" />
@@ -190,13 +88,9 @@ export default function Features() {
               key={index} 
               className={`relative group ${getBentoLayout(index)}`}
             >
-              {/* Ambient Hover Glow behind the card */}
               <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${feature.color} opacity-0 group-hover:opacity-10 dark:group-hover:opacity-20 blur-xl transition-opacity duration-500`} />
-
-              {/* Card Container */}
               <div className={`relative h-full bg-white/60 dark:bg-neutral-900/40 backdrop-blur-xl border border-gray-200/50 dark:border-white/10 rounded-3xl p-8 flex flex-col overflow-hidden transition-all duration-500 hover:-translate-y-1 ${feature.glow} shadow-lg hover:shadow-2xl`}>
                 
-                {/* Top Section: Icon & Decorative elements */}
                 <div className="flex items-start justify-between mb-8">
                   <div className={`flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br ${feature.color} p-0.5 shadow-lg group-hover:rotate-3 transition-all duration-500`}>
                     <div className="flex items-center justify-center w-full h-full bg-white/90 dark:bg-neutral-900 rounded-[14px] backdrop-blur-sm">
@@ -204,13 +98,11 @@ export default function Features() {
                     </div>
                   </div>
                   
-                  {/* Subtle index number for technical feel */}
                   <span className="text-gray-300 dark:text-gray-700 font-mono text-sm font-medium">
                     0{index + 1}
                   </span>
                 </div>
 
-                {/* Content */}
                 <div className="mt-auto">
                   <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white tracking-tight">
                     {feature.title}
@@ -224,7 +116,6 @@ export default function Features() {
           ))}
         </div>
 
-        {/* Floating CTA Banner */}
         <div className="mt-24 relative">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 blur-3xl rounded-full" />
           <div className="relative bg-white/80 dark:bg-neutral-900/80 backdrop-blur-2xl border border-gray-200 dark:border-white/10 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden shadow-2xl">
@@ -242,7 +133,6 @@ export default function Features() {
               onClick={() => window.open("https://t.me/onchainwiki_bot", "_blank")}
               className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-2xl font-bold text-lg overflow-hidden transition-transform active:scale-95 shrink-0"
             >
-              {/* Button Hover Gradient */}
               <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               
               <span className="relative z-10 group-hover:text-white transition-colors duration-300">

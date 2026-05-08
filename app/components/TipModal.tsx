@@ -56,10 +56,8 @@ export default function TipModal({ isOpen, onClose }: TipModalProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      {/* Backdrop */}
+      
       <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={onClose} />
-
-      {/* Modal */}
       <div className="relative glass-card rounded-3xl p-8 max-w-md w-full mx-4 animate-in fade-in-0 zoom-in-95 duration-300">
         {/* Close Button */}
         <Button
@@ -99,22 +97,6 @@ export default function TipModal({ isOpen, onClose }: TipModalProps) {
           {copied && <p className="text-green-500 text-sm mt-2">Address copied to clipboard!</p>}
         </div>
 
-        {/* Quick Amounts */}
-        {/* <div className="mb-6">
-          <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-3">Quick Amounts</label>
-          <div className="grid grid-cols-3 gap-2">
-            {["0.01 ETH", "0.05 ETH", "0.1 ETH"].map((amount) => (
-              <button
-                key={amount}
-                className="glass-card rounded-xl p-3 text-sm font-medium hover:bg-white/20 dark:hover:bg-white/10 transition-colors"
-              >
-                {amount}
-              </button>
-            ))}
-          </div>
-        </div> */}
-
-        {/* Alternative Methods */}
         <div className="border-t border-white/20 dark:border-white/10 pt-6">
           <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">Other ways to support us:</p>
           <div className="space-y-2">

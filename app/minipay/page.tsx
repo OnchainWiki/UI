@@ -32,7 +32,6 @@ function MiniPayApp() {
         return () => clearTimeout(timer);
     }, [isConnected, connect]);
 
-    // 1. Logic: Detection Loading State
     if (isMiniPay === null) {
         return (
             <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-neutral-950">
@@ -47,14 +46,12 @@ function MiniPayApp() {
         );
     }
 
-    // 2. Logic: Integrated MiniPay restricted access check
-    if (!isMiniPay) {
-        return <NotMiniPay />;
-    }
+  // if (!isMiniPay) {
+    //    return <NotMiniPay />;
+    //}
 
     return (
         <div className="min-h-screen bg-gray-50/50 dark:bg-neutral-950 pb-32 transition-colors duration-500">
-            {/* Optimized Premium Header */}
             <header className="sticky top-0 z-50 bg-white/80 dark:bg-neutral-900/80 backdrop-blur-xl border-b border-gray-100 dark:border-white/5 px-6 py-4">
                 <div className="flex items-center justify-between max-w-2xl mx-auto">
                     <div className="flex items-center gap-3">
@@ -106,7 +103,6 @@ function MiniPayApp() {
                     )}
                 </div>
 
-                {/* Refined Telegram CTA Bento Box */}
                 <div className="relative group overflow-hidden bg-white/80 dark:bg-neutral-900/60 backdrop-blur-xl border border-gray-200 dark:border-white/10 rounded-[2.5rem] p-6 shadow-sm hover:shadow-xl transition-all duration-300">
                     <div className="absolute top-0 right-0 p-4 opacity-[0.03] group-hover:rotate-12 group-hover:scale-110 transition-all duration-700 select-none">
                         <Bot className="w-28 h-28 text-blue-600" />
@@ -135,7 +131,6 @@ function MiniPayApp() {
                 </div>
             </main>
 
-            {/* Floating Glass Navigation Dock */}
             <nav className="fixed bottom-6 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] max-w-md z-50">
                 <div className="bg-white/80 dark:bg-neutral-900/80 backdrop-blur-2xl border border-gray-200/50 dark:border-white/10 p-2 rounded-[2.5rem] shadow-2xl flex justify-around items-center ring-1 ring-black/5">
                     {([

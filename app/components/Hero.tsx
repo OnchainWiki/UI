@@ -11,7 +11,6 @@ export default function Hero() {
   return (
     <section className="relative pt-32 pb-20 px-4 overflow-hidden isolate">
 
-      {/* Floating Elements */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500/20 rounded-full blur-xl animate-float -z-10" />
       <div
         className="absolute top-40 right-20 w-32 h-32 bg-purple-500/20 rounded-full blur-xl animate-float -z-10"
@@ -23,7 +22,6 @@ export default function Hero() {
       />
 
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        {/* Badge */}
         <div className="inline-flex items-center space-x-2 glass-card rounded-full px-6 py-2 mb-8 animate-pulse-slow">
           <Sparkles className="w-4 h-4 text-blue-500" />
           <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Your Web3 Educator and Digital asset manager</span>
@@ -40,19 +38,17 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           <span className="gradient-text">OnchainWiki</span>
           <br />
           <span className="text-gray-800 dark:text-gray-200">Your Web3 Guide</span>
         </h1>
 
-        {/* Subtitle */}
+    
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
           An educational Web3 Telegram AI Assistant and Crypto Asset Manager. <br />Explore blockchain safely with me !!
         </p>
 
-        {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
           <Button
             size="lg"
@@ -84,7 +80,6 @@ export default function Hero() {
           </Button>
         </div>
 
-        {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="glass-card rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300">
             <div className="text-3xl font-bold gradient-text mb-2">Web3 Mentor</div>
