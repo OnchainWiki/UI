@@ -30,12 +30,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta
-          name="talentapp:project_verification"
-          content="daefb88615680f00454f67606f889cd59e2a60284c32309ec43ab5b3769ab15761ab3de3131a143f4500bc05374ebf86520859b44831bc88adb3ce39745f53ea"
-        />
-      </head>
       <body className={inter.className}>
         <ThemeProvider>
           <Header />
