@@ -46,9 +46,9 @@ function MiniPayApp() {
         );
     }
 
-  // if (!isMiniPay) {
-    //    return <NotMiniPay />;
-    //}
+  if (!isMiniPay) {
+       return <NotMiniPay />;
+    }
 
     return (
         <div className="min-h-screen bg-gray-50/50 dark:bg-neutral-950 pb-32 transition-colors duration-500">
