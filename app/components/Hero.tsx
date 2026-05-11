@@ -39,14 +39,14 @@ export default function Hero() {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          <span className="gradient-text">OnchainWiki</span>
-          <br />
-          <span className="text-gray-800 dark:text-gray-200">Your Web3 Guide</span>
+          {/* <span className="gradient-text">OnchainWiki</span> */}
+          {/* <br />  text-gray-800 dark:text-gray-200*/}
+          <span className="gradient-text">Your Web3 Guide</span>
         </h1>
 
     
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
-          An educational Web3 Telegram AI Assistant and Crypto Asset Manager. <br />Explore blockchain safely with me !!
+          A blockchain mentor, career guide and crypto asset manager. <br />Discover Web3 with confidence, clarity and safety.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
@@ -82,16 +82,16 @@ export default function Hero() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           <div className="glass-card rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300">
-            <div className="text-3xl font-bold gradient-text mb-2">Web3 Mentor</div>
-            <div className="text-gray-600 dark:text-gray-400">AI Educator</div>
+            <div className="text-3xl font-bold gradient-text mb-2">Web3 Educator</div>
+            <div className="text-gray-600 dark:text-gray-400">AI Mentor</div>
           </div>
           <div className="glass-card rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300">
             <div className="text-3xl font-bold gradient-text mb-2">Secure Wallet</div>
-            <div className="text-gray-600 dark:text-gray-400">DeFi on Telegram</div>
+            <div className="text-gray-600 dark:text-gray-400">Seamless DeFi</div>
           </div>
           <div className="glass-card rounded-2xl p-6 text-center transform hover:scale-105 transition-all duration-300">
             <div className="text-3xl font-bold gradient-text mb-2">Multichain</div>
-            <div className="text-gray-600 dark:text-gray-400">Protocols Covered</div>
+            <div className="text-gray-600 dark:text-gray-400">Cross-Chain Interoperability</div>
           </div>
         </div>
       </div>

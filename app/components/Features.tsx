@@ -12,8 +12,8 @@ const features = [
   },
   {
     icon: Users,
-    title: "Community Driven",
-    description: "Built for the community, learn from collective knowledge.",
+    title: "Self Paced Learning",
+    description: "Learn at your own pace with our comprehensive curriculum designed for all skill levels.",
     color: "from-purple-500 to-pink-500",
     glow: "group-hover:shadow-purple-500/20",
   },
@@ -71,11 +71,11 @@ export default function Features() {
             <Sparkles className="w-4 h-4 text-blue-500" />
             <span>Powerful Capabilities</span>
           </div>
-          <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white">
+          {/* <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-500">
-              Onchain Features
+              Features
             </span>
-          </h2>
+          </h2> */}
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
             Everything you need to understand, navigate and build in the world of decentralized technologies.
           </p>
@@ -118,7 +118,7 @@ export default function Features() {
 
         <div className="mt-24 relative">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 blur-3xl rounded-full" />
-          <div className="relative bg-white/80 dark:bg-neutral-900/80 backdrop-blur-2xl border border-gray-200 dark:border-white/10 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden shadow-2xl">
+          {/* <div className="relative bg-white/80 dark:bg-neutral-900/80 backdrop-blur-2xl border border-gray-200 dark:border-white/10 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 overflow-hidden shadow-2xl">
             
             <div className="max-w-2xl text-center md:text-left">
               <h3 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900 dark:text-white tracking-tight">
@@ -140,7 +140,7 @@ export default function Features() {
               </span>
               <ArrowRight className="relative z-10 w-5 h-5 group-hover:text-white group-hover:translate-x-1 transition-all duration-300" />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
