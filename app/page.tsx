@@ -15,7 +15,6 @@ export default function Home() {
           {/* <Header /> */}
           <Hero />
           <Features />
-          <Footer />
         </div>
       </div>
     </main>
