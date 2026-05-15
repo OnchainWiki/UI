@@ -164,12 +164,12 @@ export default function Header() {
             >
               Analytics
             </Link>
-            <Link
+            {/* <Link
               href="/minipay"
               className="px-4 py-2 rounded-xl bg-green-500/10 text-green-700 dark:text-green-400 text-sm font-semibold flex items-center gap-2 hover:bg-green-500/20 transition-all border border-green-500/20"
             >
               <span>🌿</span> MiniPay App
-            </Link>
+            </Link> */}
           </div>
 
           {/* Controls */}
